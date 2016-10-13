@@ -106,6 +106,8 @@ function tempera_admin_scripts() {
 function tempera_init_fn(){
 
 	register_setting('tempera_settings', 'tempera_settings', 'tempera_settings_validate');
+	
+	do_action('tempera_pre_settings_fields');
 
 /**************
    sections
@@ -230,6 +232,8 @@ function tempera_init_fn(){
 	add_settings_field('tempera_copyright', __('Custom Footer Text','tempera') , 'cryout_setting_copyright_fn', 'tempera-page', 'misc_section');
 	add_settings_field('tempera_customcss', __('Custom CSS','tempera') , 'cryout_setting_customcss_fn', 'tempera-page', 'misc_section');
 	add_settings_field('tempera_customjs', __('Custom JavaScript','tempera') , 'cryout_setting_customjs_fn', 'tempera-page', 'misc_section');
+	
+	do_action('tempera_post_settings_fields');
 
 }
 

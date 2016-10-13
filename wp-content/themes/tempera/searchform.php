@@ -4,9 +4,12 @@
  *
  * @package Tempera
  */
-?> 
+?>
 
 <form role="search" method="get" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-	<input type="search" placeholder="<?php _e( 'Search', 'tempera' ); ?>" name="s" class="s" value="<?php echo get_search_query(); ?>" />
-	<input type="submit" class="searchsubmit" value="&#xe816;" />
+	<label>
+		<span class="screen-reader-text"><?php echo _e( 'Search for:', 'tempera' ); ?></span>
+		<input type="search" class="s" placeholder="<?php echo esc_attr_e( 'Search', 'tempera' ); ?>" value="<?php echo get_search_query(); ?>" name="s" />
+	</label>
+	<button type="submit" class="searchsubmit"><span class="screen-reader-text"><?php echo _e( 'Search', 'tempera' ); ?></span><i class="icon-search"></i></button>
 </form>

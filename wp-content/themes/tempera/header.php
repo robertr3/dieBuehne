@@ -24,7 +24,7 @@
 <?php cryout_body_hook(); ?>
 
 <div id="wrapper" class="hfeed">
-<div id="topbar" ><div id="topbar-upper"></div><div id="topbar-inner"> <?php cryout_topbar_hook(); ?> </div></div>
+<div id="topbar" ><div id="topbar-inner"> <?php cryout_topbar_hook(); ?> </div></div>
 <?php cryout_wrapper_hook(); ?>
 
 <div id="header-full">

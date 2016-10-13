@@ -144,7 +144,7 @@ $tempera_defaults = array(
 "tempera_submenucolortxtdefault"	=> "#BBBBBB",
 "tempera_submenucolorshadow"		=> "",
 
-"tempera_topbarcolorbg" => "#000000",
+"tempera_topbarcolorbg"	=> "#000000",
 "tempera_topmenucolortxt"	=> "#CCCCCC",
 "tempera_topmenucolortxthover"	=> "#EEEEEE",
 

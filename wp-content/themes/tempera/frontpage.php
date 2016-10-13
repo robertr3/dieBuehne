@@ -234,7 +234,7 @@ function tempera_columns($columns,$nr_columns,$readmore){
 			tempera_singlecolumn_output($coldata);
 		endif;
 	endforeach; ?>
-</div><?php
+<div id='secondary' class='widget-area sidey' role='complementary'><ul class='xoxo'><li id='ngg-images-2' class='widget-container ngg_images'><div class='hslice' id='ngg-webslice'><div class='ngg-widget entry-content'></div></div></li></ul></div></div><?php
 } // tempera_columns()
 
 // tempera_singlecolumn_output() moved to includes/widget.php and made pluggable
